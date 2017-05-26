@@ -37,7 +37,7 @@ Encryption follows this protocol (decryption reverses it, decoding the HMAC firs
 
 6. The final output is then the concatenation of the IV, the encrypted data and the HMAC. The IV and HMAC are of known length so can easily be extracted ready for decryption when needed.
 
-Credit to Thomas Pornin for providing the details for much of the above algorithm here:
+Credit to Thomas Pornin for providing the inspiration for some of the above algorithm here:
 https://security.stackexchange.com/questions/63132/when-to-use-hmac-alongside-aes
 
 
