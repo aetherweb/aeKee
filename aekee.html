@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>aeKee Offline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="inc/styles.css">
+  </head>
+  <body>
+	<div id='overlay'><div id='overlaycontent'><br />
+	<br />
+	<span id='overlaymsg'>Decrypting...</span></div></div>
+	<div class='container'>
+		<div class='row'>
+			<div class='col-12'>
+				<div id='vtitle' class='vtitle vault-a' title=''><div id='vtitletitle'>AEKEE SECURE NOTE</div></div>
+				<input type='password' autofill='newpassword' name='sp' id='sp' placeholder='enter passphrase' class='w100'>
+				<textarea id='snote' name='snote' class='text textwrap'>okwYYlbkd52vhKmbJktpaQwn4S+/B0y83svtGA2rK4Pwx5OhRaprnma1Afy//BS0O81Ci/3OIA47NFbIO0j2Wh6679qP9QYyqNOwlvs5H+0C5IpJR8YeAM5ujXF0ktNVUlp4GYB37UVi5CevSl5eMLL1Y/W1FqBUbsw3pmiHjtqFCfLElUnr6v6xHN8+NcRGA6wCVjwmfXR5Rv4D2S3TNCVbL303hXCBF4mOsYMf+T8t6UMu1mRQ694tjUz37Pc7F4AA1n6NHC9R36NE+PYv1syxFCnQNxgKqmvVADoil6fmYaLkW7gireSgrjZBp3XWjOA42uQKrHuBzytdGETFauR3mnCVMl5C6NVzQoZgNs0gFOa7VsjhTJfpv6qDhVKKOCJ/iGlXrOCALIOl5SijQDRf8yB7c6FJ20e72pnd0sKg==39ab45f9521c490933e002d0e1b41d966450d45e26e342041601f2dc9f21c292</textarea>
+				<button id='encry' class='btndisabled'>ENCRYPT</button>
+				<button id='decry' class='btndisabled'>DECRYPT</button>
+			</div>
+		</div>
+	</div>
+	<script src='inc/crypto.js'></script>
+	<script src='inc/aekee.js'></script>
+  </body>
+</html>
