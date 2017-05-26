@@ -27,7 +27,7 @@ Encryption follows this protocol (decryption reverses it, decoding the HMAC firs
 
 1. Generate a random IV using SaltThePass.
 
-2. Perform around 10,000 iterations of PBKDF2 on the entered passphrase using the IV as a salt - number of iterations dependent partly on a simple sum of character values in the the passphrase to generate a key 'K'.
+2. Perform around 10,000 iterations of PBKDF2 on the entered passphrase using the IV as a salt (number of iterations dependent partly on a simple sum of the ascii character values in the passphrase) to generate a key 'K'.
 
 3. Split the key into two halves. Encryption Ke and Km.
 
