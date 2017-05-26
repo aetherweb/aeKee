@@ -11,7 +11,7 @@ Uses the same encryption/decryption algorithm as used at https://aekee.com for s
 
 Does not use jQuery.
 
-Runs in all modern browsers.
+Runs in all modern browsers (that have been tested so far). Does not require an internet connection.
 
 Download aekee.html and 'inc' folder and contents, maintain file structure.
 
