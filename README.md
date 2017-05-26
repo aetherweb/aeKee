@@ -17,7 +17,7 @@ Download aekee.html and 'inc' folder and contents.
 
 Open aekee.html in a 'modern' browser. Ideally Chrome or Firefox, 2017+ version.
 
-Initial pre-loaded ciphertext decrypts with passphrase 'aetherweb'.
+Initial pre-loaded ciphertext decrypts with passphrase 'aekee'.
 
 Live demo:
 https://aekee.com/ol/aekee.html
