@@ -18,26 +18,9 @@ function cryptOverlay(switchon, msg)
 	}
 }
 
-var lastSysMsg = '';
 function doSysMsg(msg)
 {
-	lastSysMsg = msg;
-	try {
-		var s = document.getElementById('sysmsgs');
-		var d = new Date();
-		var date = d.getFullYear()+'-'+pad(d.getMonth(),2)+'-'+pad(d.getDate(),2)+' '+pad(d.getHours(),2)+':'+pad(d.getMinutes(),2)+':'+pad(d.getSeconds(),2);
-		s.innerHTML = date + ' ' + msg + '<br />\n' + s.innerHTML;
-	} catch (err) {}
-}
-
-function cryptOverlayOff()
-{
-	cryptOverlay(false);
-}
-
-function pad(num, size)
-{ 
-	return ('000000000' + num).substr(-size); 
+	console.log(msg);
 }
 
 var md5 = function(value) {
