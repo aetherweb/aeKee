@@ -1,0 +1,215 @@
+body { font-family: 'Helvetica', sans-serif;
+ font-size: 18px; line-height: 1.2; margin: 3px; position: relative; }
+body { background-color: #ccc; }
+button, input, textarea, select { font-family: 'Helvetica', sans-serif; }
+a { outline: none; color: #000; }
+#overlay { display: none; position: fixed; top:0;left:0; width:100vw; height: 100vh; margin:0; padding:0; opacity: 0.8; z-index: 9999; }
+#overlaycontent { display: table-cell; text-align: center; vertical-align: middle; background-color: #fff; }
+input, select, button { font-size: 26px; width:100%; padding:3px 15px; box-sizing: border-box; border:none; border-radius:2px; -webkit-appearance: none; -webkit-border-radius:2px; outline: none; margin-bottom: 2px; }
+button { width: 100%; margin:0 0 5px 0; border: none; background-color: #565; color: #fff; cursor: pointer; cursor: hand; }
+.hidden { display: none; }
+.w100 { width: 100% !important; }
+button { padding: 3px; }
+#encry, #decry { width: 100%; border: none; box-shadow: 0 2px 4px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23); }
+button:hover { cursor: pointer; cursor: hand; background-color: #484; }
+#snote { font-size: 18px; width: 100%; height: 270px; margin-bottom: 2px; border: none; border-radius: 2px; box-sizing: border-box; outline: none; padding: 15px; background-color: #fff; }
+button.btndisabled:hover { background-color: #999; box-shadow: none; }
+button.btndisabled { background-color: #999; box-shadow: none; cursor: not-allowed }
+.vtitle { padding: 4px 15px; color: #fff; font-size: 22px; margin-bottom: 2px; position: relative; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: url("../inc/aekeetr.png"); background-position: right -23px center; background-repeat: no-repeat; background-size: auto 24px; text-transform: uppercase; }
+.green { color: #0f0; }
+h1 { font-size: 18px; font-weight: bold; margin: 0 0 18px 0; color: #000; }
+p { margin: 0 0 1em 0; }
+.text, .smalltext { font-size: 18px; background-color: #fff; padding: 15px; margin-bottom: 2px; border-radius: 3px; overflow-wrap: break-word; word-wrap: break-word; }
+.smalltext { font-size: 14px; margin-bottom: 10px; }
+.text a, .text a:hover { color: #000; }
+.vault-a { background-color: #f00000; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+xmp{ white-space:pre-wrap; word-wrap:break-word; padding: 10px; border: 1px solid #999; background-color: #f6f6f6; }
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
+
