@@ -4,4 +4,5 @@ Simple client-side Javascript only PBKDF2->AES->HMAC and back encryption/decrypt
 Makes use of, with thanks, portions of both CryptoJS and SaltThePass:
 
 https://github.com/brix/crypto-js
+
 https://github.com/nicjansma/saltthepass.js/tree/master
