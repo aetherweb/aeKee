@@ -23,31 +23,6 @@ function doSysMsg(msg)
 	console.log(msg);
 }
 
-var md5 = function(value) {
-    return CryptoJS.MD5(value).toString();
-}
-
-var ripemd160 = function(value) {
-    return CryptoJS.RIPEMD160(value).toString();	
-}
-
-var sha256 = function(value) {
-    return CryptoJS.SHA256(value).toString();	
-}
-
-var sha512 = function(value) {
-    return CryptoJS.SHA512(value).toString();	
-}
-
-var sha3 = function(value) {
-    return CryptoJS.SHA3(value).toString();	
-}
-
-var hmacsha3 = function(value) {
-    return CryptoJS.HmacSHA3(value).toString();	
-}
-
-
 function aeDecrypt(data, pass, user)
 {
 	decry = '';
