@@ -13,7 +13,7 @@ Does not use jQuery.
 
 Runs in all modern browsers.
 
-Download aekee.html and 'inc' folder and contents.
+Download aekee.html and 'inc' folder and contents, maintain file structure.
 
 Open aekee.html in a 'modern' browser. Ideally Chrome or Firefox, 2017+ version.
 
