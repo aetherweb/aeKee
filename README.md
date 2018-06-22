@@ -15,7 +15,7 @@ Runs in all modern browsers (that have been tested so far). Does not require an 
 
 Download using the big green button above and to the right of this document (if you're currently viewing this here: https://github.com/aekee/aeKee) and open aekee.html in a 'modern' browser. Ideally Chrome or Firefox, 2017+ version.
 
-Initial pre-loaded ciphertext decrypts with passphrase 'aekee'.
+<b>Initial pre-loaded ciphertext decrypts with passphrase 'aekee'.</b>
 
 Live demo:
 https://aekee.com/ol/aekee.html
