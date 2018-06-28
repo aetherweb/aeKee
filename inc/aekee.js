@@ -27,18 +27,18 @@ function aeDecrypt(data, pass, user)
 {
 	decry = '';
 	try {
-	// 1. Let's get the salt
-  	salt = data.substring(0,32);
-  	data = data.substring(32,data.length);
+		// 1. Let's get the salt
+	  	salt = data.substring(0,32);
+	  	data = data.substring(32,data.length);
 
-  	// 2. Let's make a decent pass and iv from their u and p
-	pi = getPBKDF2PS(pass, user, salt);
+	  	// 2. Let's make a decent pass and iv from their u and p
+		pi = getPBKDF2PS(pass, user, salt);
 
-	// 3. Decrypt with these values then
-	cipherParams = CryptoJS.lib.CipherParams.create({ciphertext: CryptoJS.enc.Hex.parse(data)});
-	var decrypted = CryptoJS.AES.decrypt(cipherParams, CryptoJS.enc.Hex.parse(pi['pass']), { iv: CryptoJS.enc.Hex.parse(pi['iv']), mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 });
+		// 3. Decrypt with these values then
+		cipherParams = CryptoJS.lib.CipherParams.create({ciphertext: CryptoJS.enc.Hex.parse(data)});
+		var decrypted = CryptoJS.AES.decrypt(cipherParams, CryptoJS.enc.Hex.parse(pi['pass']), { iv: CryptoJS.enc.Hex.parse(pi['iv']), mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 });
 
-	decry = decrypted.toString(CryptoJS.enc.Utf8);
+		decry = decrypted.toString(CryptoJS.enc.Utf8);
 	} catch (err) {}
 	return decry;	
 }
