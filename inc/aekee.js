@@ -1,4 +1,5 @@
 // Base level of iterations when generating encryption key
+// arbitrarily chosen
 var encIts = 9753;
 
 // Internal global vars
